@@ -1,0 +1,270 @@
+@font-face {
+  font-family: "fontawesome-webfont";
+  src: url("../../static/fonts/fontawesome-webfont.woff2") format("woff2"),
+       url("../../static/fonts/fontawesome-webfont.woff") format("woff"),
+       url("../../static/fonts/fontawesome-webfont.ttf") format("truetype"),
+       url("../../static/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+       url("../../static/fonts/fontawesome-webfont.svg") format("svg");
+}
+
+
+.col-3-margin{
+	margin-top: 0px;
+	margin-bottom: 3px;
+	padding-right: 0px;
+}
+
+.card-body-margin{
+	margin-top: 50px;
+}
+
+
+
+.post-title-link{
+	color: #8C8C8C;
+}
+.d-block{
+	width: 100%;
+}
+.post-title{
+	text-align: center;
+}
+.post-meta{
+	color: #8C8C8C;
+	text-align: center;
+}
+.post-meta-color{
+	color: #23272B;
+}
+.card-text-color{
+	color: #444444;
+}
+.page-link{
+	color:#60676D
+}
+
+
+
+.pagination{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+/* 轮播图 */
+.d-block{
+	height: 600px;
+}
+
+.carousel-caption{
+	padding: 150px;
+}
+
+/* 功能块 */
+
+.navbar-brand{
+	text-align: center;
+	padding-top: 15px;
+}
+
+.div_function {
+	width: 78%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+}
+.navbar{
+	margin-bottom: 0px;
+}
+.iv_function {
+	width: 68px;
+	height: 68px;
+	margin-top: 12px;
+}
+.col-3-margin{
+	margin-top: 0px;
+	margin-bottom: 3px;
+	padding-right: 0px;
+}
+
+.card-body-margin{
+	margin-top: 50px;
+}
+
+.btn-primary{
+	background-color: white;
+	color: #101010;
+	border-color: #C0C0C0;
+}
+/* 分割线 */
+.div_divider {
+	margin-top: 24px;
+	color: #34374C;
+}
+.hr_1 {
+	width: 50px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.hr_2 {
+	width: 80%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* 文章列表 */
+.div_article {
+	margin-top: 24px;
+}
+
+/* 文章顶部栏 */
+.item_article_first {
+	background-color: #34374C !important;
+	border-color: #34374C !important;
+}
+
+.item_article {
+	min-height: 120px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+}
+
+.item_article .row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+}
+
+.div_center {
+    height: auto;
+    max-height: 140px;
+    overflow: hidden;
+}
+
+.div_article_title {
+	font-size: 22px;
+}
+
+.div_article_content {
+	color: #a0a0a0;
+    word-wrap:break-word;
+    word-break:break-all;
+	width: 100%;
+}
+
+.iv_article {
+	width: 88px;
+	height: 88px;
+	margin: auto;
+}
+
+.div_right_info {
+	text-align: right;
+}
+
+/* 随手记 */
+.div_record {
+	margin-top: 24px;
+}
+
+.div_save {
+	text-align: right;
+}
+
+.btn_save_record {
+	width: 100%;
+	background-color: #34374C;
+	border-color: #34374C;
+}
+
+/* 小功能列表 */
+.btn-cricle {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+	text-align: center;
+}
+
+.div_little_func .col-xs-4{
+	text-align: center;
+}
+.jumbotron-fluid{
+	width: 100%;
+}
+/* 右下角按钮 */
+.btn_right_bottom {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+.img-size{
+	width: 20px;
+	height: 20px;
+}
+/* 用户信息 */
+.div_userinfo {
+	background-color: #34374C;
+	color: white;
+	padding: 12px 24px 12px 24px !important;
+}
+
+.iv_user_head {
+	width: 48px;
+	height: 48px;
+}
+.card-img{
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.carousel-indicators li{
+	width:35px;
+	height: 6px;
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.carousel-indicators .active{
+	width:35px;
+	height: 6px;
+	border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.card-post1{
+	min-width: 300px;
+	height:300px;
+	padding-left: 0px;
+}
+
+
+.nav-size{
+	opacity: 0.9;
+	height: 30px;
+}
+
+.tag-size{
+	height: 50px;
+	width: 80px;
+}
+.car-bot{
+	margin:auto;
+	padding:auto;
+	padding-top: 200px;
+	text-align: center;
+
+}
+.car{
+	margin-bottom: 50px;
+}
+.card-post1-1{
+	min-width: 300px;
+}

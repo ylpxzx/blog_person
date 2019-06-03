@@ -1,0 +1,190 @@
+{% load static %}
+  <!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}首页{% endblock %}- 孤狼博客系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="{% static 'js/index.css' %}">
+
+<link href="{% static 'fonts/fontawesome-webfont.css' %}" rel="stylesheet" type="text/css">
+
+{% block extra_head %}
+    {% endblock %}
+  </head>
+  {% block  post-detail %}
+<style>
+	.body-fonts{
+        background-color: #e9ecef;
+		font-family: 'fontawesome-webfont';
+
+	}
+
+</style>
+
+  {% endblock %}
+  <body class="body-fonts">
+<!-- 轮播图模块 -->
+{% block car %}
+ <nav class=" navbar navbar-expand-lg  bg-white nav-size sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"style="background-color: gray;border-color: gray">
+    <span class="navbar-toggler-icon">导</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <a class="navbar-brand" href="/"><h4 style="color: #000;">首页</h4></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        {% for cate in navs %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'category-list' cate.id %}"><h8 style="color: #000;"><strong>{{ cate.name }}</strong> </h8></a>
+      </li>
+        {% endfor %}
+    {% for cate in categories %}
+            <a href="{% url 'category-list' cate.id %}" class="nav-link"><h8 style="color: #000;"><strong>{{ cate.name }}</strong></h8></a>
+            {% endfor %}
+    </ul>
+
+            <form class="form-inline my-2 my-lg-0" action='/search/' method="GET">
+                <input class="form-control  mr-sm-2" type="search" name="keyword" placeholder="Search" aria-label="Search" value="{{ keyword }}">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onmouseover="this.style.backgroundColor='#555555';"
+onmouseout="this.style.backgroundColor='';"style="border-color: dimgray;"><img src="{% static 'img/1229382.png' %}" class="img-size"/></button>
+            </form>
+  </div>
+</nav>
+
+
+
+<!--
+	作者：794859685@qq.com
+	时间：2019-04-09
+	描述：侧栏
+-->
+
+    <div class="jumbotron jumbotron-fluid"style="background-color: cadetblue">
+  <div class="container"style="text-align: center;padding-top: 10px">
+    <h1 class="display-4">岚轩阁</h1>
+      <h3 class="display-5">xzx个人博客</h3>
+    <p class="lead">---让优秀成为一种习惯</p>
+  </div>
+</div>
+
+
+{% endblock %}
+
+<div class="container-fluid">
+<div class="row">
+	<div class="col-2"style="min-width: 330px;margin-left: 60px;padding-right: 0px">
+          <div class="card shadow p-3 mb-5 rounded"style="margin-bottom: 10px">
+  <img src="{% static 'img/322020.jpg' %}" class="img-rounded card-img-top"style="max-height: 350px">
+  <div class="card-body card-text-color">
+    <h4 class="card-title"><strong>博主</strong></h4>
+      <p class="card-text"><h5 style="color:dimgrey;"><strong>既然我已经踏上了这条道路，那么，任何东西都不应妨碍我沿着这条路走下去。</strong></h5></p>
+  </div>
+
+
+
+<hr/>
+<div class="card-body"style="min-width: 300px">
+    <a href="https://blog.csdn.net/qq_42278240/" class="card-link card-text-color shadow p-3 mb-5 bg-white rounded">CSDN</a>
+    <a href="https://www.github.com/ylpxzx" class="card-link card-text-color shadow p-3 mb-5 bg-white rounded"style="margin-left:auto">Github</a>
+    <a href="#" class="card-link card-text-color shadow p-3 mb-5 bg-white rounded"style="margin-left:auto">weixin</a>
+    <a href="#" class="card-link card-text-color shadow p-3 mb-5 bg-white rounded"style="margin-left:auto">QQ</a>
+  </div>
+</div>
+
+
+
+
+{% for sidebar in sidebars %}
+<div class="card" style="max-width: 540px;margin-bottom: 10px">
+  <div class="row no-gutters">
+    <div>
+      <div class="card-body">
+          <h5 class="card-title"><strong>{{ sidebar.title }}</strong></h5>
+        <p class="card-text"> {{ sidebar.content_html }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+        {% endfor %}
+
+
+
+
+                    </div>
+
+<!--文章-->
+{% block main %}
+{% endblock %}
+
+{% block side %}
+
+<div class="col-2"style="min-width: 320px;">
+<div class="card card-margin shadow p-3 mb-5 rounded">
+  <div class="card-body card-text-color">
+    <h4 class="card-title"><strong>轮播图</strong></h4>
+      <p class="lead"><h5>美的图片、愉悦你一天的心情.</h5></p>
+  </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active " data-interval="2000">
+        <img src="{% static 'img/324916.jpg' %}" class="d-block w-100" style="max-height: 250px">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="{% static 'img/325001.jpg' %}" class="d-block w-100" style="max-height: 250px">
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="{% static 'img/319964.jpg' %}" class="d-block w-100"style="max-height: 250px">
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="{% static 'img/320108.jpg' %}" class="d-block w-100"style="max-height: 250px" >
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="{% static 'img/316587.jpg' %}" class="d-block w-100"style="max-height: 250px">
+
+      </div>
+      <div class="carousel-item" data-interval="2000">
+        <img src="{% static 'img/319626.jpg' %}" class="d-block w-100" style="max-height: 250px">
+      </div>
+    </div>
+  </div>
+    <hr/>
+<div class="card-body card-text-color">
+    <h4 class="card-title"><strong>标签云</strong></h4>
+      <p class="lead"><h5>标签云集合块.</h5></p>
+
+  </div>
+</div>
+    <div class="card card-margin shadow p-3 mb-5 rounded">
+  <div class="card-body card-text-color">
+    <h4 class="card-title"><strong>图墙</strong></h4>
+      <p class="lead"><h5>美的图片、愉悦你一天的心情.</h5></p>
+  </div>
+
+    <hr/>
+    <img src="{% static 'img/319104.jpg' %}"style="max-height: 300px;max-width: 280px">
+    <hr/>
+<img src="{% static 'img/306645.jpg' %}"style="max-height: 300px;max-width: 280px">
+    <hr/>
+    <img src="{% static 'img/313018.jpg' %}"style="max-height: 300px;max-width: 280px">
+</div>
+</div>
+
+{% endblock %}
+
+
+    <div class="jumbotron jumbotron-fluid"style="max-height: 100px;margin-bottom: 0px;background-color: white">
+  <div class="container"style="text-align: center;">
+    <p class="lead">让优秀成为习惯、让自由变成浪荡！</p>
+  </div>
+</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  </body>
+</html>

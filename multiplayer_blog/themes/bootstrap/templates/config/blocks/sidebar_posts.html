@@ -1,0 +1,20 @@
+<ul style="list-style-type:none;padding-left: 0px">
+{% for post in posts%}
+    <li>
+        <a class="lead" href="{% url 'post-detail' post.id %}"style="text-decoration:none;color:#1b1e21;">
+    <div style="max-width: 540px;">
+  <div class="row no-gutters"style="padding-bottom: 20px;padding-top: 15px">
+    <div class="col-md-4">
+      <img src="/media/{{ post.image1 }}" class="card-img" alt="..."style="max-height: 150px;margin-bottom: 0px;margin-top: 0px;padding-left: 0px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body"style="padding-bottom: 0px;padding-top: 0px;">
+        <h5 class="card-title">{{ post.title }}</h5>
+        <p class="card-text"><small class="text-muted">{{ post.created_time }}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+     </a></li>
+{% endfor %}
+</ul>

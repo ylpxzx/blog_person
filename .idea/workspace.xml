@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="23ed0c36-a212-412c-8f9f-3382137f1946" name="Default Changelist" comment="1">
+      <change afterPath="$PROJECT_DIR$/blog/apis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/middleware/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/middleware/user_id.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/rss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/sitemap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comment/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/autocomplete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/base_admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/custom_site.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/media/goods/319104.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/settings/product.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/storage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/307899.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/319964.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/avatar.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/block.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/sitemap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/blog/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/blog/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/config/blocks/sidebar_comments.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/config/blocks/sidebar_posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/multiplayer_blog/themes/default/templates/config/links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitigonre" beforeDir="false" afterPath="$PROJECT_DIR$/.gitigonre" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/config/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplayer_blog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/multiplayer_blog/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplayer_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplayer_blog/settings/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplayer_blog/settings/develop.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplayer_blog/settings/develop.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/multiplayer_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/multiplayer_blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perl.exe.stackdump" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
+              <folding>
+                <element signature="n#style#0;n#strong#0;n#h5#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/block.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#button#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#a#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/result.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/sitemap.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/links.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_comments.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_posts.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2193">
+              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/config/adminx.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/base_admin.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/django/contrib/auth/__init__.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/views/base.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/models.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/views/dashboard.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/filters.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/bookmark.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/relate.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/details.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/topnav.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/language.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/sortablelist.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/importexport.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/views/list.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/util.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/sites.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/views/edit.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/plugins/quickform.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/autocomplete.py" />
+        <option value="$PROJECT_DIR$/../../Lib/site-packages/xadmin/views/website.py" />
+        <option value="$PROJECT_DIR$/blog/apis.py" />
+        <option value="$PROJECT_DIR$/logging.py" />
+        <option value="$PROJECT_DIR$/logging2.py" />
+        <option value="$PROJECT_DIR$/config/models.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/settings/develop.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/settings/product.py" />
+        <option value="F:/python/Lib/configparser.py" />
+        <option value="$PROJECT_DIR$/../setup.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/../../../django_blog-master/templates/index.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/css/extra.css" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/css/index.css" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/post_editor.js" />
+        <option value="$PROJECT_DIR$/../../../django_blog-master/templates/blog-detail.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/result.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_posts.html" />
+        <option value="$PROJECT_DIR$/comment/forms.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/index.css" />
+        <option value="$PROJECT_DIR$/blog/serializers.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/settings/base.py" />
+        <option value="$PROJECT_DIR$/blog/adminforms.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/storage.py" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/blog/adminx.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/urls.py" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/list.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/detail.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/block.html" />
+        <option value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/base.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="76" />
+    <option name="y" value="41" />
+    <option name="width" value="1165" />
+    <option name="height" value="944" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog-env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog-env" type="462c0819:PsiDirectoryNode" />
+              <item name="gulang_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog-env" type="462c0819:PsiDirectoryNode" />
+              <item name="gulang_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog-env" type="462c0819:PsiDirectoryNode" />
+              <item name="gulang_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="multiplayer_blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python371" type="b5f07198:RTreeStructureProvider$1" />
+              <item name="python_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="Django_wordspace" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog-env" type="462c0819:PsiDirectoryNode" />
+              <item name="gulang_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="multiplayer_blog" type="462c0819:PsiDirectoryNode" />
+              <item name="media" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static\img" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\media\goods" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\templates\comment" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\default" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\templates\config\blocks" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static\img" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static\js" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static\css_js" />
+      <recent name="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\multiplayer_blog\themes\bootstrap\static\fonts" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="logging" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="multiplayer_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\python371\python_wordspace\Django_wordspace\multiplayer_blog-env\gulang_blog\multiplayer_blog\logging2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logging2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="multiplayer_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/logging2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="multiplayer_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../django_blog-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../django_blog-master/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="multiplayer_blog" type="Python.DjangoServer" factoryName="Django server">
+      <module name="multiplayer_blog" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="multiplayer_blog.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.logging2" />
+        <item itemvalue="Python.logging" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\acer\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23ed0c36-a212-412c-8f9f-3382137f1946" name="Default Changelist" comment="" />
+      <created>1553267788599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553267788599</updated>
+      <workItem from="1553267790995" duration="450000" />
+      <workItem from="1553397600585" duration="9795000" />
+      <workItem from="1553506581765" duration="4102000" />
+      <workItem from="1553564442091" duration="15931000" />
+      <workItem from="1553654818599" duration="9214000" />
+      <workItem from="1553700441724" duration="3427000" />
+      <workItem from="1553747624686" duration="9597000" />
+      <workItem from="1553823981737" duration="1232000" />
+      <workItem from="1554001087638" duration="185000" />
+      <workItem from="1554001375144" duration="21674000" />
+      <workItem from="1554085548879" duration="16126000" />
+      <workItem from="1554172159358" duration="6426000" />
+      <workItem from="1554258417960" duration="4800000" />
+      <workItem from="1554374187021" duration="4477000" />
+      <workItem from="1554450121514" duration="8402000" />
+      <workItem from="1554601286671" duration="15087000" />
+      <workItem from="1554691247068" duration="20993000" />
+      <workItem from="1554774523901" duration="850000" />
+      <workItem from="1554865432176" duration="28492000" />
+      <workItem from="1554912640001" duration="432000" />
+      <workItem from="1554949311747" duration="15567000" />
+      <workItem from="1554983274980" duration="14742000" />
+      <workItem from="1555045931273" duration="31131000" />
+      <workItem from="1555084859104" duration="6000" />
+      <workItem from="1555085154262" duration="208000" />
+      <workItem from="1555123381051" duration="19033000" />
+      <workItem from="1555295576106" duration="167000" />
+      <workItem from="1555295861874" duration="1751000" />
+      <workItem from="1555389424168" duration="1783000" />
+      <workItem from="1557302240902" duration="6652000" />
+      <workItem from="1557547262205" duration="21248000" />
+      <workItem from="1557650336632" duration="4248000" />
+      <workItem from="1557716385183" duration="987000" />
+    </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1553577950102</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553577950102</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="299215000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18498659" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.5439094" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932975" weight="0.49008498" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.49008498" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.25070822" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3621399" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/multiplayer_blog$logging.coverage" NAME="logging Coverage Results" MODIFIED="1554450912188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/multiplayer_blog$manage.coverage" NAME="manage Coverage Results" MODIFIED="1557716781381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../django_blog-master" />
+    <SUITE FILE_PATH="coverage/multiplayer_blog$logging2.coverage" NAME="logging2 Coverage Results" MODIFIED="1554451594882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/fonts/fontawesome-webfont.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/npm.js" />
+    <entry file="file://$PROJECT_DIR$/../../../django_blog-master/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="12" selection-start-line="10" selection-start-column="4" selection-end-line="83" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#article#0;n#section#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/1229382.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/325001.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324976.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324916.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324789.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324346.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324593.jpg" />
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/324647.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/323926.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/322020.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/320108.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/319964.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/319626.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/319104.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/img/316911.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/util.js" />
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/post_editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#183#365#0" expanded="true" />
+            <element signature="e#400#453#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../django_blog_templates-master/templates/blog-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6273" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../django_blog-master/templates/blog-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="105" column="88" lean-forward="true" selection-start-line="105" selection-start-column="88" selection-end-line="105" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/migrations/0004_post_content_html.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/migrations/0005_post_is_md.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#874#940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comment/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#957#1153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/static/js/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="40" column="65" selection-start-line="40" selection-start-column="65" selection-end-line="40" selection-end-column="65" />
+          <folding>
+            <element signature="e#261#311#0" expanded="true" />
+            <element signature="e#1597#2084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/apis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <folding>
+            <element signature="e#532#567#0" expanded="true" />
+            <element signature="e#954#1056#0" expanded="true" />
+            <element signature="e#1107#1274#0" expanded="true" />
+            <element signature="e#1502#1608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/adminforms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#1126#1395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1384">
+          <caret line="50" column="15" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/adminx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#845#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="n#style#0;n#strong#0;n#h5#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#button#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#a#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/comment/result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/links.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_comments.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/config/blocks/sidebar_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiplayer_blog/themes/bootstrap/templates/blog/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

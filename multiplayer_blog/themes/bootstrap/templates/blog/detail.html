@@ -1,0 +1,133 @@
+{% extends "./base.html" %}
+{% load static %}
+{% load comment_block %}
+{% block title %}{{ post.title }}{% endblock %}
+{% block extra_head %}
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/googlecode.min.css">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+
+    {% block  post-detail %}
+        {% if post %}
+       <style>
+    .car{
+        height: 700px;
+        background-image: url('/media/{{ post.image1 }}');
+        background-size:cover;
+    }
+</style>
+        {% endif %}
+    {% endblock %}
+
+{% block car %}
+    <div class="car">
+    <nav class=" navbar navbar-expand-lg  sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"style="background-color:#444444;">
+    <span class="navbar-toggler-icon"><h4><strong>导</strong></h4></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <a href="/"style="text-decoration:none"><h3 style="color:black;">首页</h3></a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        {% for cate in navs %}
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'category-list' cate.id %}"><h5 style="color:white;">{{ cate.name }} </h5></a>
+      </li>
+        {% endfor %}
+    {% for cate in categories %}
+            <a href="{% url 'category-list' cate.id %}" class="nav-link"><h5>{{ cate.name }}</h5></a>
+            {% endfor %}
+    </ul>
+
+            <form class="form-inline my-2 my-lg-0" action='/search/' method="GET">
+                <input class="form-control  mr-sm-2" type="search" name="keyword" placeholder="Search" aria-label="Search" value="{{ keyword }}">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onmouseover="this.style.backgroundColor='#555555';"
+onmouseout="this.style.backgroundColor='';"style="border-color: dimgray;"><img src="{% static 'img/1229382.png' %}" class="img-size"/></button>
+            </form>
+  </div>
+</nav>
+
+
+    <div class="car-bot">
+         <button type="button" class="btn btn-primary" onmouseover="this.style.backgroundColor='gray';"onmouseout="this.style.backgroundColor='#e2e3e5';"style="border-color: #e2e3e5;background-color:#e2e3e5;">
+             <a href="{% url 'category-list' post.category_id %}"style="text-decoration:none">
+  <h7 style="color:black;"><strong>{{ post.category.name }}</strong></h7></a>
+</button>
+
+        <button type="button" class="btn btn-primary"onmouseover="this.style.backgroundColor='gray';"onmouseout="this.style.backgroundColor='#e2e3e5';"style="border-color: #e2e3e5;background-color:#e2e3e5;">
+  <strong>访问次数</strong> <span class="badge badge-light">{{ post.pv }}</span>
+</button>
+        <button type="button" class="btn btn-primary"onmouseover="this.style.backgroundColor='gray';"onmouseout="this.style.backgroundColor='#e2e3e5';"style="border-color: #e2e3e5;background-color:#e2e3e5;">
+  <strong>用户访问量 </strong><span class="badge badge-light">{{ post.uv }}</span>
+</button>
+        <h3 class="display-4"style="color:white;"><strong>{{ post.title }}</strong></h3>
+        <p class="h2"style="color:white;">由{{ post.owner.username }}发表于&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---{{post.created_time }}</p>
+    </div>
+    </div>
+
+<div class="container-fluid">
+<div class="row">
+{% endblock %}
+
+
+{% block main %}
+ <div class="col-lg-8  col-md-7">
+ <button type="button" class="list-group-item list-group-item-action active"style="background-color: gray;border-color: gray;margin-bottom: 10px">
+
+     <a href="{% url 'category-list' post.category_id %}"style="text-decoration:none">
+
+  <h7 style="color:white;"><strong>{{ post.category.name }}&nbsp;&nbsp;&nbsp;----->&nbsp;</strong></h7></a>
+
+      <h7 style="color:white;"><strong>{{ post.title }}</strong></h7>
+  </button>
+
+    <div class="post shadow-lg p-3 mb-5 bg-white rounded card-post1-1"style="opacity: 0.9;">
+{% if post %}
+<p style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">
+{% autoescape off %}
+    <h3>{{ post.content_html }}</h3>
+{% endautoescape %}
+</p>
+{% endif %}
+
+
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+ </div>
+
+
+{% comment_block request.path %}
+    </div>
+
+{% block side %}
+    {% endblock %}
+
+
+{% endblock %}
+</div>
+</div>
+

@@ -1,0 +1,73 @@
+{% load static %}
+
+<button type="button" class="list-group-item list-group-item-action active"style="margin-bottom: 10px;background-color: dimgray;border-color: dimgray">
+    评论列表
+  </button>
+
+
+
+
+
+    <form id="comment_form" class="form-group" action="/comment/" method="POST">
+        {% csrf_token %}
+        <input class="from-control " name="target" type="hidden" value="{{ target }}"/>
+        {{ comment_form }}
+        <div id="captcha_section"></div>
+         <button id="submit" type="submit" class="btn btn-primary" value="提交" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">Submit</button>
+    </form>
+
+
+
+
+
+
+
+    <!-- 评论列表 -->
+
+
+
+
+<div class="spinner-border spinner-border-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+    {% for comment in comment_list %}
+        <button type="button" class="list-group-item list-group-item-action active"style="max-width: 600px;background-color: dimgray;border-color: dimgray">
+            访客：<a href="{{ comment.website }}" style="color: white">{{ comment.nickname }}</a>
+  </button>
+  <a class="list-group-item list-group-item-action"style="max-width:600px">
+    <div class="d-flex w-100 justify-content-between">
+      <img src="{% static 'img/avatar.ico' %}" class="img-rounded card-img-top"style="max-height: 40px;max-width: 40px;margin-bottom:30px;margin-top: 5px;">
+      <small>{{ comment.created_time }}</small>
+    </div>
+
+        {% autoescape off %}
+            <!--字数超出一定限制后换行，避免行过长，超出整个页面-->
+           <h5 style="white-space:normal; word-break:break-all;overflow:hidden;"> {{ comment.content }}</h5>
+                {% endautoescape %}
+
+    <p style="text-align: end"><small style="width: auto;">.......</small></p>
+  </a>
+    {% endfor %}
+
+
+</div>
+
+
+
